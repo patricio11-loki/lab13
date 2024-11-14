@@ -27,8 +27,7 @@ function calculadora(num1, num2, operacion) {
         case 'division':
             
                 return division (num1, num2);
-          
-    }
+          }
 }
 let numero1=parseFloat(prompt("Ingrese el primer número:  "));
 let numero2=parseFloat(prompt("Ingrese el segundo número:  "));
