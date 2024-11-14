@@ -22,14 +22,14 @@ function division(a, b) {
 function calculadora(num1, num2, operacion) {
     switch (operacion) {
         case 'suma':
-            return suma (num1 + num2);
+            return suma (num1, num2);
         case 'resta':
-            return resta (num1 - num2);
+            return resta (num1, num2);
         case 'multiplicacion':
-            return multiplicacion (num1 * num2);
+            return multiplicacion (num1, num2);
         case 'division':
             if (num2 !== 0) {
-                return division (num1 / num2);
+                return division (num1, num2);
             } else {
                 return 'Error: División por cero';
             }
