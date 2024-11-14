@@ -20,7 +20,6 @@ function division(a, b) {
     }
     return a / b;
 }
-
 // Ejemplos de uso
 document.write("Suma: ", suma(5, 3));           // Resultado: 8
 document.write("Resta: ", resta(5, 3));         // Resultado: 2
