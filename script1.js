@@ -13,6 +13,9 @@ function multiplicacion(a, b) {
 }
 // Función de división
 function division(a, b) {
+    if (b === 0) {
+        return "Error: División por cero";
+    }
     return a / b;
 }
 //función calculadora
@@ -25,13 +28,18 @@ function calculadora(num1, num2, operacion) {
         case 'multiplicacion':
             return multiplicacion (num1, num2);
         case 'division':
-            
+            if (num2 !== 0) {
                 return division (num1, num2);
-          }
+            } else {
+                return 'Error: División por cero';
+            }
+        default:
+            return 'Operación no válida';
+    }
 }
 let numero1=parseFloat(prompt("Ingrese el primer número:  "));
 let numero2=parseFloat(prompt("Ingrese el segundo número:  "));
-let operacion=parseFloat(prompt("Ingrese la operación (suma, resta, multiplicacion, division)"));
+let operacion=prompt("Ingrese la operación (suma, resta, multiplicacion, division)");
 
 let resultado=calculadora(numero1, numero2, operacion);
 console.log("El resultado es:  "+ resultado);
