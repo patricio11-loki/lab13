@@ -37,9 +37,9 @@ function calculadora(num1, num2, operacion) {
             return 'Operación no válida';
     }
 }
-let numero1=prompt("Ingrese el primer número:  ");
-let numero2=prompt("Ingrese el segundo número:  ");
-let operacion=prompt("Ingrese la operación (sumar, restar, multi, divi)");
+let numero1=parseFloat(prompt("Ingrese el primer número:  "));
+let numero2=parseFloat(prompt("Ingrese el segundo número:  "));
+let operacion=parseFloat(prompt("Ingrese la operación (sumar, restar, multi, divi)"));
 
 let resultado=calculadora(numero1, numero2, operacion);
 document.write("El resultado es:  "+ resultado);
