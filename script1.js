@@ -42,3 +42,4 @@ let numero2=prompt("Ingrese el segundo número:  ");
 let operacion=prompt("Ingrese la operación (sumar, restar, multi, divi)");
 
 let resultado=calculadora(numero1, numero2, operacion);
+document.write("El resultado es:  "+ resultado);
